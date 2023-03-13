@@ -32,20 +32,31 @@
     </header>
 
     <main class="contenedor">
-        <h4 class="centrar-texto">Entrada De Blog</h4>
-        <div class="entrada">
-            <div class="entrada__imagen">
-                <img src="img/blog1.jpg" alt="imagen del blog">
+        <h3 class="centrar-texto">Contacto</h3>
+        <div class="contacto-bg"></div>
+
+        <form class="formulario">
+            <div class="campo">
+                <label class="campo__label">Nombre</label>
+                <input class="campo__field" type="text" placeholder="Tu Nombre">
             </div>
 
-            <div class="entrada__texto">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt eu nibh sed sagittis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin efficitur pharetra molestie. Etiam ac sem vel felis convallis consequat ac id elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus nec accumsan ipsum. Aenean tristique magna magna, eu porttitor nibh elementum sodales. Nullam dapibus metus arcu, eu sagittis nulla eleifend vel. Aliquam et urna sit amet purus elementum mollis.</p>
-                <p>Suspendisse ac iaculis felis, ac venenatis nibh. Donec venenatis eros ut erat fringilla accumsan. Etiam at volutpat sapien. </p>
-                <p>Vestibulum vitae pharetra urna. Duis porta metus non enim dictum, quis imperdiet est blandit. Morbi lobortis convallis lorem. Aliquam at semper lectus, ut consectetur ligula. Suspendisse ut lectus nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat imperdiet mi, a ornare tellus consequat a. Aliquam lobortis erat bibendum lectus convallis pretium. Nulla vehicula sapien nec magna placerat, sit amet venenatis diam facilisis.</p>
-            
+            <div class="campo">
+                <label class="campo__label">E-mail</label>
+                <input class="campo__field" type="email" placeholder="Tu E-mail">
             </div>
-        
-    </div>
+
+            <div class="campo">
+                <label class="campo__label">Mensaje</label>
+                <textarea class="campo__field campo__field--textarea"></textarea>
+            </div>
+
+            <div class="campo">
+                <input type="submit" value="Enviar" class="boton boton--primario">
+            </div>
+
+
+        </form>
     </main>
 
     <footer class="footer">
