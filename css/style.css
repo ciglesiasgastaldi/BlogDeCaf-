@@ -36,6 +36,7 @@ a{
 
 h1, h2, h3, h4{
     font-family: var(--fuenteHeading);
+    line-height: 1.2;
 }
 
 h1{
@@ -87,6 +88,10 @@ img{
         margin-top: 15rem;
     }
     
+}
+
+.barra{
+    padding-top: 4rem;
 }
 
 
@@ -165,5 +170,83 @@ img{
         background-color: var(--negro);
         
     }
+
+    /* Sidebar */
+    .boton--secundario{
+        background-color: var(--primario);
+    }
+
+    .cursos{
+        list-style: none;
+    }
+
+    .widget-curso{
+        border-bottom: 1px solid var(--claro); 
+    }
+    .widget-curso:last-of-type{
+        border: none;
+        margin-bottom: 0;
+    }
+
+    .widget-curso__label{
+        font-family: var(--fuenteHeading);
+        font-weight: bold;
+
+    }
+    .widget-curso__info{
+        font-weight: 400;
+    }
+
+    .widget-curso__label,
+    .widget-curso__info{
+        font-size: 2rem;
+    }
+
+    /* Footer */
+    .footer{
+        background-color: var(--negro);
+        padding: 3rem 0;
+        margin-top: 4rem;
+    }
+
+    /* Nosotros */
+    @media (min-width: 768px) {
+       .sobre-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    } 
+    }
+
+    /* Cursos */
+    .curso{
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--claro);
+        }
+        .curso:last-of-type{
+            border: none;
+        }
+    @media (min-width: 768px) {
+
+        .curso{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            column-gap: 2rem;
+        } 
+    }
+
+    .curso__label{
+        font-family: var(--fuenteHeading);
+        font-weight: bold;
+    }
+
+    .curso__info{
+        font-weight: 400;
+    }
+    .curso__label,
+    .curso__info{
+        font-size: 2rem;
+    }
+    
     
 
